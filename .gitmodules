@@ -1,0 +1,3 @@
+[submodule "external/oneDPL"]
+	path = external/oneDPL
+	url = https://github.com/oneapi-src/oneDPL.git

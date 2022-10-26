@@ -1,0 +1,27 @@
+# CMake version
+cmake_minimum_required(VERSION 3.22.1)
+
+# Project name
+project(TBB_tutorial)
+
+# CPP version
+set(CMAKE_CXX_STANDARD 17)
+
+# Look for TBB
+include(FindTBB.cmake)
+
+# Include headers
+include_directories(external)
+include_directories(external/oneDPL/include/)
+
+#---------
+# Modules
+# --------
+
+# oneAPI
+add_subdirectory(./external)
+
+# AppB
+add_subdirectory(./AppB)
+
+# Chapters
